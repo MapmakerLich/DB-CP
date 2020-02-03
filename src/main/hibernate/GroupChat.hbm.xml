@@ -1,0 +1,9 @@
+<hibernate-mapping>
+    <class name="classes.GroupChat" table="public_channel">
+        <id column="id" name="chatID" type="java.lang.Integer">
+            <generator class="increment"/>
+        </id>
+        <property column="name" name="name" type="java.lang.String"/>
+        <property column="admin_id" name="adminID" type="java.lang.Integer"/>
+    </class>
+</hibernate-mapping>

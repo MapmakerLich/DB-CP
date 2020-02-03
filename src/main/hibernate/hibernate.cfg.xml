@@ -1,0 +1,15 @@
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mysql://localhost:3306/project?serverTimezone=UTC</property>
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">LTDB14+</property>
+        <property name="show_sql">true</property>
+        <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+
+        <mapping resource="User.hbm.xml"/>
+        <mapping resource="PrivateChat.hbm.xml"/>
+        <mapping resource="GroupChat.hbm.xml"/>
+        <mapping resource="Message.hbm.xml"/>
+    </session-factory>
+</hibernate-configuration>
