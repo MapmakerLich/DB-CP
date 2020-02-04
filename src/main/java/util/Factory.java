@@ -10,6 +10,7 @@ public class Factory {
     private static MessageDBIimpl message = null;
     private static LogEntryDBIimpl logEntry = null;
     private static BlacklistDBIimpl blacklist = null;
+    private static AccessDBIimpl access = null;
     private static Factory instance = null;
 
     public static synchronized Factory getInstance(){
@@ -64,5 +65,13 @@ public class Factory {
             blacklist = new BlacklistDBIimpl();
         }
         return blacklist;
+    }
+
+    public AccessDBI getAccessDBI(){
+        if (access== null)
+        {
+            access = new AccessDBIimpl();
+        }
+        return access;
     }
 }

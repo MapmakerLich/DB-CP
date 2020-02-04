@@ -11,5 +11,7 @@
         <mapping resource="PrivateChat.hbm.xml"/>
         <mapping resource="GroupChat.hbm.xml"/>
         <mapping resource="Message.hbm.xml"/>
+        <mapping resource="LogEntry.hbm.xml"/>
+        <mapping resource="Blacklist.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>
