@@ -1,0 +1,9 @@
+<hibernate-mapping>
+    <class name="classes.BlacklistEntry" table="blacklist">
+        <id column="id" name="id" type="java.lang.Integer">
+            <generator class="increment"/>
+        </id>
+        <property column="id_blocker" name="blockerID" type="java.lang.Integer"/>
+        <property column="id_blocked" name="blockedID" type="java.lang.Integer"/>
+    </class>
+</hibernate-mapping>

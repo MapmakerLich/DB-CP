@@ -1,0 +1,11 @@
+<hibernate-mapping>
+    <class name="classes.LogEntry" table="block_log">
+        <id column="id" name="actionID" type="java.lang.Integer">
+            <generator class="increment"/>
+        </id>
+        <property column="channel_id" name="channelID" type="java.lang.Integer"/>
+        <property column="target_ID" name="targetID" type="java.lang.Integer"/>
+        <property column="executioner_ID" name="executionerID" type="java.lang.Integer"/>
+        <property column="date" name="date" type="java.sql.Date"/>
+    </class>
+</hibernate-mapping>
