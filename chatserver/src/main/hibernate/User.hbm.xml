@@ -1,0 +1,10 @@
+<hibernate-mapping>
+    <class name="classes.User" table="user">
+        <id column="id" name="userID" type="java.lang.Integer">
+            <generator class="increment"/>
+        </id>
+        <property column="name" name="login" type="java.lang.String"/>
+        <property column="password" name="password" type="java.lang.String"/>
+        <property column="status" name="status" type="java.lang.Boolean"/>
+    </class>
+</hibernate-mapping>

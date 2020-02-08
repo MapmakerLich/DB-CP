@@ -1,0 +1,11 @@
+<hibernate-mapping>
+    <class name="classes.Message" table="message">
+        <id column="id" name="messageID" type="java.lang.Integer">
+            <generator class="increment"/>
+        </id>
+        <property column="id_author" name="authorID" type="java.lang.Integer"/>
+        <property column="content" name="text" type="java.lang.String"/>
+        <property column="id_channel" name="channelID" type="java.lang.Integer"/>
+        <property column="date" name="timestamp" type="java.sql.Date"/>
+    </class>
+</hibernate-mapping>
